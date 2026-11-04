@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.76622b27.css",
-    "main.js": "/static/js/main.f6845a0f.js",
+    "main.css": "/static/css/main.debb5749.css",
+    "main.js": "/static/js/main.fe446043.js",
     "static/js/453.dd17e408.chunk.js": "/static/js/453.dd17e408.chunk.js",
-    "static/media/websites.png": "/static/media/websites.241fe0ee22169d19c3b3.png",
+    "static/media/foto-perfil-dark.png": "/static/media/foto-perfil-dark.35b486bb83275ed4c2ab.png",
+    "static/media/gasparello.png": "/static/media/gasparello.4b289d93165af4beab74.png",
+    "static/media/joao-barbosa.png": "/static/media/joao-barbosa.09477ae8130605fc0ec4.png",
     "static/media/sibgrapi.png": "/static/media/sibgrapi.68c9e2871d98cf341aba.png",
+    "static/media/nanispecs.png": "/static/media/nanispecs.10694299d22ac45396d5.png",
     "static/media/consulta-impostos.png": "/static/media/consulta-impostos.0068bd1dd4722f320f9e.png",
-    "static/media/foto-perfil.png": "/static/media/foto-perfil.5f98e3a1c4ea3afb387e.png",
-    "static/media/low-poly-grid-haikei.svg": "/static/media/low-poly-grid-haikei.84a55c7a54e065992673.svg",
+    "static/media/nutrinani.png": "/static/media/nutrinani.f5316f481ea1e3f2459c.png",
     "index.html": "/index.html",
-    "main.76622b27.css.map": "/static/css/main.76622b27.css.map",
-    "main.f6845a0f.js.map": "/static/js/main.f6845a0f.js.map",
+    "main.debb5749.css.map": "/static/css/main.debb5749.css.map",
+    "main.fe446043.js.map": "/static/js/main.fe446043.js.map",
     "453.dd17e408.chunk.js.map": "/static/js/453.dd17e408.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.76622b27.css",
-    "static/js/main.f6845a0f.js"
+    "static/css/main.debb5749.css",
+    "static/js/main.fe446043.js"
   ]
 }
