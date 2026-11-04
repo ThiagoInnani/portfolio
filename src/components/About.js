@@ -1,6 +1,6 @@
 // src/components/About.js
 import React from "react";
-import profilePic from "../assets/foto-perfil-dark.png";
+import profilePic from "../assets/foto-perfil.jpg";
 
 const About = () => {
   return (
