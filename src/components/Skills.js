@@ -1,53 +1,44 @@
 // src/components/Skills.js
 import React from "react";
-import { useInView } from "react-intersection-observer";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faPencilRuler,
-  faLaptopCode,
-  faBrain,
-} from "@fortawesome/free-solid-svg-icons";
 
 const Skills = () => {
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
-
   const skillList = [
     {
-      icon: faPencilRuler,
-      title: "Design",
+      category: "Visão Computacional",
+      title: "Visão Computacional & IA Generativa",
       description:
-        "Criação de interfaces intuitivas e experiências de usuário focadas na usabilidade e na estética moderna.",
+        "Foco do meu mestrado na UTFPR. Pesquisa e desenvolvimento em modelos generativos e difusão (Seg2Sat-P), síntese de imagens e redes neurais profundas com PyTorch.",
     },
     {
-      icon: faLaptopCode,
+      category: "Desenvolvimento Web",
       title: "Desenvolvimento Full-Stack",
       description:
-        "Desenvolvimento de aplicações web completas, do back-end ao front-end, utilizando tecnologias como Python, React e frameworks modernos.",
+        "Construção de aplicações web robustas e modernas utilizando React, Vite, JavaScript/TypeScript, Tailwind CSS, Python, Supabase, MySQL e arquitetura REST.",
     },
     {
-      icon: faBrain,
-      title: "Machine Learning",
+      category: "3D & Interatividade",
+      title: "3D Web & Interatividade",
       description:
-        "É o meu objeto de estudo no mestrado, sou familiarizado com redes neurais e possuo experiência especificamente em GANs.",
+        "Criação de experiências imersivas no navegador com Three.js e WebGL, modelagem interativa de cenas, visão explodida e shaders de alta fidelidade visual.",
+    },
+    {
+      category: "Docência & Pesquisa",
+      title: "Docência & Pesquisa Científica",
+      description:
+        "Atuação em Estágio de Docência na UTFPR ministrando tópicos de Machine Learning (como Árvores de Decisão), além de publicação e apresentação em congresso internacional (SIBGRAPI).",
     },
   ];
 
   return (
-    <section
-      ref={ref}
-      id="skills"
-      className={`section ${inView ? "is-visible" : ""}`}
-    >
-      <h2>Habilidades</h2>
-      <div className="skills-container">
+    <section id="skills">
+      <span className="label">[02] Especialidades</span>
+      <h2>Habilidades &amp; Especialidades</h2>
+      <div className="skills-grid">
         {skillList.map((skill) => (
           <div className="skill-card" key={skill.title}>
-            <div className="skill-icon">
-              <FontAwesomeIcon icon={skill.icon} size="3x" />
-            </div>
+            <span className="label" style={{ color: "var(--accent)" }}>
+              {skill.category}
+            </span>
             <h3>{skill.title}</h3>
             <p>{skill.description}</p>
           </div>

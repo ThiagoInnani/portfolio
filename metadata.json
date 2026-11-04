@@ -1,0 +1,6 @@
+{
+  "name": "Thiago Innani Portfolio",
+  "description": "Portfólio 2026 de Thiago Innani Justus - Engenheiro de Software & Pesquisador em IA",
+  "permissions": [],
+  "capabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
