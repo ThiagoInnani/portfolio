@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.debb5749.css",
-    "main.js": "/static/js/main.fe446043.js",
+    "main.css": "/static/css/main.f2180872.css",
+    "main.js": "/static/js/main.d714714f.js",
     "static/js/453.dd17e408.chunk.js": "/static/js/453.dd17e408.chunk.js",
-    "static/media/foto-perfil-dark.png": "/static/media/foto-perfil-dark.35b486bb83275ed4c2ab.png",
+    "static/media/foto-perfil.jpg": "/static/media/foto-perfil.680b538b3698dca0266e.jpg",
     "static/media/gasparello.png": "/static/media/gasparello.4b289d93165af4beab74.png",
     "static/media/joao-barbosa.png": "/static/media/joao-barbosa.09477ae8130605fc0ec4.png",
     "static/media/sibgrapi.png": "/static/media/sibgrapi.68c9e2871d98cf341aba.png",
@@ -11,12 +11,12 @@
     "static/media/consulta-impostos.png": "/static/media/consulta-impostos.0068bd1dd4722f320f9e.png",
     "static/media/nutrinani.png": "/static/media/nutrinani.f5316f481ea1e3f2459c.png",
     "index.html": "/index.html",
-    "main.debb5749.css.map": "/static/css/main.debb5749.css.map",
-    "main.fe446043.js.map": "/static/js/main.fe446043.js.map",
+    "main.f2180872.css.map": "/static/css/main.f2180872.css.map",
+    "main.d714714f.js.map": "/static/js/main.d714714f.js.map",
     "453.dd17e408.chunk.js.map": "/static/js/453.dd17e408.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.debb5749.css",
-    "static/js/main.fe446043.js"
+    "static/css/main.f2180872.css",
+    "static/js/main.d714714f.js"
   ]
 }
