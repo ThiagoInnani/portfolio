@@ -5,9 +5,12 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
+import { LanguageProvider, useLanguage } from "./context/LanguageContext";
 import "./App.css";
 
-function App() {
+function MainContent() {
+  const { t } = useLanguage();
+
   return (
     <div className="app-layout">
       <Header />
@@ -17,18 +20,26 @@ function App() {
         <Experience />
         <Projects />
         <footer className="footer">
-          <div className="label">[05] Contato</div>
+          <div className="label">{t.footer.sectionLabel}</div>
           <div className="footer-contact">
-            <a href="mailto:thiagoinnani@gmail.com" className="footer-email">thiagoinnani@gmail.com</a>
+            <a href="mailto:thiagoinnani@gmail.com" className="footer-email">
+              thiagoinnani@gmail.com
+            </a>
             <span className="footer-divider">|</span>
             <span className="footer-phone">(42) 99865-7082</span>
           </div>
-          <p className="footer-copy">
-            © 2026 Thiago Innani Justus. Todos os direitos reservados.
-          </p>
+          <p className="footer-copy">{t.footer.copyright}</p>
         </footer>
       </main>
     </div>
+  );
+}
+
+function App() {
+  return (
+    <LanguageProvider>
+      <MainContent />
+    </LanguageProvider>
   );
 }
 

@@ -1,45 +1,49 @@
 // src/components/About.js
 import React from "react";
 import profilePic from "../assets/foto-perfil.jpg";
+import { useLanguage } from "../context/LanguageContext";
 
 const About = () => {
+  const { t } = useLanguage();
+
   return (
     <section id="about" className="hero">
       <div className="hero-content">
-        <span className="label">[01] Introdução</span>
+        <span className="label">{t.hero.sectionLabel}</span>
         <h1 className="hero-title">
-          <span className="hero-title-line">Engenheiro de Software &amp;</span>
-          <span className="hero-title-line hero-title-highlight">Pesquisador em IA</span>
+          <span className="hero-title-line">{t.hero.titleLine1}</span>
+          <span className="hero-title-line hero-title-highlight">{t.hero.titleLine2}</span>
         </h1>
         <div className="about-text">
-          Engenheiro de software e pesquisador de mestrado na UTFPR, focado em{" "}
-          <strong style={{ color: "var(--ink)" }}>Visão Computacional</strong>,{" "}
-          <strong style={{ color: "var(--ink)" }}>IA Generativa (Seg2Sat-P)</strong> e desenvolvimento{" "}
-          <strong style={{ color: "var(--ink)" }}>Full-Stack</strong> de alta performance. Apaixonado por
-          tecnologia desde pequeno, alio rigor científico e excelência em engenharia para
-          desenvolver soluções digitais modernas, eficientes e escaláveis para negócios.
+          {t.hero.aboutText.part1}
+          <strong style={{ color: "var(--ink)" }}>{t.hero.aboutText.strong1}</strong>
+          {t.hero.aboutText.part2}
+          <strong style={{ color: "var(--ink)" }}>{t.hero.aboutText.strong2}</strong>
+          {t.hero.aboutText.part3}
+          <strong style={{ color: "var(--ink)" }}>{t.hero.aboutText.strong3}</strong>
+          {t.hero.aboutText.part4}
         </div>
         <div className="location-pill">
           <span className="label" style={{ color: "var(--accent)", margin: 0 }}>
-            ● Paraná, Brasil
+            {t.hero.location}
           </span>
         </div>
         <div className="hero-actions">
           <a
             href="/curriculo-thiago-innani.pdf"
-            download="Curriculo_Thiago_Innani.pdf"
+            download={t.hero.cvFileName}
             className="btn-download-cv"
-            title="Baixar Currículo de Thiago Innani em PDF"
+            title={t.hero.cvTitle}
           >
             <svg viewBox="0 0 24 24" className="btn-icon" aria-hidden="true">
               <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z" />
             </svg>
-            <span>Baixar Currículo (PDF)</span>
+            <span>{t.hero.downloadCV}</span>
           </a>
           <div className="social-links">
             <a
               href="mailto:thiagoinnani@gmail.com"
-              title="E-mail: thiagoinnani@gmail.com"
+              title={t.hero.emailTitle}
               aria-label="E-mail"
             >
               <svg viewBox="0 0 24 24">
